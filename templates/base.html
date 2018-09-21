@@ -10,20 +10,21 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
   crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+   integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 
   <title>{% block title %}Portfolio App{% endblock title %}</title>
   <head>
     <body>
 
-    <nav class="nav justify-content-center p-2 bg-dark">
-        <a class="nav-link active lead" href="{% url 'home' %}">Inicio</a>
-        <a class="nav-link disabled lead" href="{% url 'proyectos' %}">Proyectos</a>
-    </nav>
-
+        {% include 'home_navbar.html' %}
         {% block content %}
         {% endblock content %}
-
+        {% include 'home_certificados.html' %}
+        {% include 'home_tecnologias.html' %}
         {% include 'footer.html' %}
 
   <!-- Latest compiled and minified JavaScript -->
