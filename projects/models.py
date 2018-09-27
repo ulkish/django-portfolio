@@ -18,5 +18,8 @@ class Project(models.Model):
     link = models.CharField(max_length=50,  default='Project link.')
     github_link = models.CharField(max_length=50, default='Github link.')
 
+    class Meta:
+        ordering = ('category',)
+
     def __str__(self):
         return '{}'.format(self.title)

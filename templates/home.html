@@ -3,9 +3,16 @@
 
 {% block content %}
 <section id="HEADER">
-            <div class="">
+            <div class="row">
+                <div class="thumbnail text-center">
                 <img class="img-fluid my_img" src="{% static 'img/laptop.jpg' %}" alt="">
+                    <div class="caption">
+                             <h1>Hugo Moran</h1>
+                             <a href="{% url 'proyectos' %}" class="btn btn-lg btn-dark">Ver proyectos</a>
+                    </div>
+                </div>
             </div>
+
 </section>
 
 <section id="PERFIL">
@@ -20,4 +27,6 @@
         </div>
     </div>
 </section>
+{% include 'home_certificados.html' %}
+{% include 'home_tecnologias.html' %}
 {% endblock content %}

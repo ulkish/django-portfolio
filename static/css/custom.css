@@ -1,6 +1,7 @@
 body {
     font-family: 'Abel', sans-serif;
     font-size: 20px;
+    padding:0;
 }
 
 .nav-link {
@@ -8,6 +9,7 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   color: black;
+  text-decoration: none;
 }
 .my_img {
     max-width: 100%;;
@@ -29,6 +31,44 @@ body {
     text-transform: uppercase;
     font-size: 35px;
     -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+}
+.thumbnail {
+    position: relative;
+}
+.caption {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+}
+.caption h1 {
+    font-size: 6em;
+    letter-spacing: .3em;
+    margin-bottom: 20px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+	color: white;
+
+}
+
+@media screen and (max-width: 600px) {
+  .caption h1 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .caption h1 {
+    font-size: 3em;
+  }
+}
+
+.my_footer_title {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    color: white;
 }

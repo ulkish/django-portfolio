@@ -3,19 +3,17 @@
 {% block content %}
     <div class="card-deck m-4 text-center">
     {% for project in object_list %}
-    <div class="card" style="width: 200px;">
-        <a class="text-dark" href="https://looplab-compania.herokuapp.com/">
-        <img class="card-img-top" src="{{ project.image.url }}" alt="Screenshot de LoopLab">
-        <div class="card-block p-3">
-          <h4 class="card-title">{{ project.title}}</h4>
-        </a>
-          <p class="card-text">{{ project.description }}</p>
-        </div>
-
-      </div>
+    <div class="col-9 col-sm-12 col-md-4 col-md-12 col-lg-4 pt-3">
+        <div class="card">
+            <a class="text-dark" href="{{ project.link }}">
+            <img class="card-img-top" src="{{ project.image.url }}" alt="Screenshot del sitio">
+            <div class="card-block p-3">
+              <h4 class="card-title">{{ project.title}}</h4>
+            </a>
+              <p class="card-text">{{ project.description }}</p>
+            </div>
+          </div>
+    </div>
     {% endfor %}
-
-
-
     </div>
 {% endblock content %}
