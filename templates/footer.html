@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <footer class="footer">
     <div class="text-center bg-secondary">
         <span class="my_title p-2 my_footer_title rounded mt-2">Contacto</span>
@@ -5,13 +6,13 @@
 
         <div class="row pt-4">
             <div class="col-lg-3 mb-3">
-                <a href="src/img/HugoMoranCV.pdf" class="btn btn-block btn-lg btn-light" download="HugoMoranCV"><i class="fas fa-download"></i> Descargar CV</a>
+                <a href="{% static 'img/HugoMoranCV.pdf' %}" class="btn btn-block btn-lg btn-light" download="HugoMoranCV"><i class="fas fa-download"></i> Descargar CV</a>
             </div>
             <div class="col-md-4">
-                <p class="text-white p-2 h3 text-center"><i class="fa fa-phone-square"></i> Teléfono: 11 7097 4267</p>
+                <p class="text-white p-2 h3 text-center border-bottom"><i class="fa fa-phone-square"></i> Teléfono: 11 7097 4267</p>
             </div>
             <div class="col-md-5">
-                <p class="text-white p-2 h3 text-center"><i class="fa fa-envelope"></i> Email: dev.hugomoran@gmail.com</p>
+                <p class="text-white p-2 h3 text-center border-bottom"><i class="fa fa-envelope"></i> Email: dev.hugomoran@gmail.com</p>
             </div>
         </div>
 

@@ -33,6 +33,7 @@ body {
     -webkit-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 21px -8px rgba(0,0,0,0.75);
+    user-select: none;
 }
 .thumbnail {
     position: relative;
@@ -51,6 +52,7 @@ body {
 				 0px 8px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
 	color: white;
+    user-select: none;
 
 }
 
